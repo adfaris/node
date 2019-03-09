@@ -18,7 +18,7 @@ app.get('/ping', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-  res.send('currentDate')
+  res.send(Date.now())
 })
 
 app.get('/user/:id', function (req, res, next) {
